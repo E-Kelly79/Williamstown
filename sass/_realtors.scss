@@ -1,0 +1,55 @@
+.forms{
+  grid-column: col-start 7 / full-end;
+  background-color: $color-secondary-dark;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+
+  &__h3{
+    align-self: end;
+    justify-self: center;
+    font-size: 2.5rem;
+  }
+}
+.form{
+  display: grid;
+  grid-template-rows: max-content max-content max-content max-content;
+  grid-row-gap: 2rem;
+  justify-content: center;
+
+  &__input,
+  &__area{
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    color: black;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background-color: rgba(#fff, .75);
+    border: none;
+    width: 90%;
+    display: block;
+    margin-bottom: 2rem;
+
+    &:focus{
+      outline: none;
+      border-bottom: 3px solid $color-primary;
+      box-shadow: 0 1rem 2rem rgba(#000, .2);
+    }
+  }
+
+  &__label{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    color: #fff;
+  }
+
+
+  .btn-submit{
+    align-self: center;
+    justify-self: center;
+  }
+
+
+}
